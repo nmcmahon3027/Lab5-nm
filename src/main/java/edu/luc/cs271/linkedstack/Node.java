@@ -6,7 +6,6 @@ package edu.luc.cs271.linkedstack;
  * @param <E> the element type of the node
  */
 class Node<E> {
-
   /** The data value stored in this node. */
   public E data;
 
@@ -28,6 +27,6 @@ class Node<E> {
   /** Returns a string representation of the node suitable for debugging. */
   public String toString() {
     return "Node@" + hashCode() + "(" + data +
-        (next != null ? ", Node@" + next.hashCode() + ")" : ")");
+            (next != null ? ", Node@" + next.hashCode() + ")" : ")");
   }
 }
